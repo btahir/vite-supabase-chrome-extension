@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "You-TLDR",
+  "name": "Vite Supabase Chrome Extension Starter",
   "version": "1.0",
-  "description": "Get The tldr of any YouTube Video.",
+  "description": "A starter template for building a Chrome extension with Vite and Supabase.",
   "action": {
     "default_popup": "index.html"
   },
