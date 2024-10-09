@@ -41,6 +41,31 @@ A starter template for building a Chrome extension with Vite and Supabase.
 
 Remember to rebuild and reload the extension after making changes.
 
+## Setting up Google OAuth for Chrome Extension
+
+Source: https://supabase.com/docs/guides/auth/social-login/auth-google?queryGroups=platform&platform=chrome-extensions
+
+1. Go to the Google Cloud Console (https://console.cloud.google.com/).
+2. Create a new project or select an existing one.
+3. Navigate to the "Credentials" page in the API & Services section.
+4. Click "Create Credentials" and choose "OAuth client ID".
+5. For the application type, select "Chrome extension".
+6. Provide the extension's ID in the "Item ID" field. You can get this by:
+   - Loading your extension in Chrome
+   - Going to `chrome://extensions/`
+   - Finding your extension and copying the ID shown there
+7. Complete the OAuth consent screen setup if you haven't already.
+8. Once created, you'll receive a client ID. Update your manifest.json file with this value.
+
+## Configuring Supabase Google Provider
+
+1. Go to your Supabase project dashboard.
+2. Navigate to Authentication > Providers.
+3. Find and enable the Google provider.
+4. In the "Authorized Client IDs" section, add the OAuth client ID you created for your Chrome extension.
+
+Note: You don't need to configure the full OAuth flow in the Supabase Dashboard for Chrome extensions.
+
 ## Project Overview
 
 - Built with React, TypeScript, and Vite
