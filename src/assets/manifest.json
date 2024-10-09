@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "You-TLDR",
+  "version": "1.0",
+  "description": "Get The tldr of any YouTube Video.",
+  "icons": {
+    "16": "src/assets/icon16.png",
+    "32": "src/assets/icon32.png",
+    "192": "src/assets/icon192.png"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "src/assets/icon16.png",
+      "32": "src/assets/icon32.png",
+      "192": "src/assets/icon192.png"
+    }
+  },
+  "background": {
+    "service_worker": "src/background.ts",
+    "type": "module"
+  },
+  "permissions": ["identity", "tabs", "storage"],
+  "host_permissions": ["https://*/*"],
+  "oauth2": {
+    "client_id": "YOUR_CLIENT_ID",
+    "scopes": ["openid", "email", "profile"]
+  }
+}
