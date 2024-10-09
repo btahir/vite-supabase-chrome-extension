@@ -23,7 +23,7 @@
   "permissions": ["identity", "tabs", "storage"],
   "host_permissions": ["https://*/*"],
   "oauth2": {
-    "client_id": "YOUR_CLIENT_ID",
+    "client_id": "__OAUTH_CLIENT_ID__",
     "scopes": ["openid", "email", "profile"]
   }
 }
