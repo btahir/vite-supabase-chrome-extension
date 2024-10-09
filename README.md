@@ -13,7 +13,6 @@ A starter template for building a Chrome extension with Vite and Supabase.
    ```
    VITE_SUPABASE_URL=your_supabase_url
    VITE_SUPABASE_KEY=your_supabase_key
-   VITE_OAUTH_CLIENT_ID=your_oauth_client_id
    ```
    Replace placeholder values with your actual credentials.
 
