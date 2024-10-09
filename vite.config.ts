@@ -5,19 +5,8 @@ import { crx } from "@crxjs/vite-plugin";
 import manifest from "./public/manifest.json";
 
 export default defineConfig({
-  plugins: [
-    react(),
-    crx({
-      // @ts-ignore
-      manifest: {
-        ...manifest,
-        oauth2: {
-          ...manifest.oauth2,
-          client_id: process.env.VITE_OAUTH_CLIENT_ID || manifest.oauth2.client_id,
-        },
-      },
-    }),
-  ],
+  // @ts-ignore
+  plugins: [react(), crx({ manifest })],
   server: {
     port: 3000,
   },

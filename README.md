@@ -17,7 +17,18 @@ A starter template for building a Chrome extension with Vite and Supabase.
    ```
    Replace placeholder values with your actual credentials.
 
-3. Run the development server:
+3. Update the `manifest.json` file:
+   - Locate the `manifest.json` file in the `public` directory.
+   - Find the `oauth2` section and update the `client_id` field:
+     ```json
+     "oauth2": {
+       "client_id": "__OAUTH_CLIENT_ID__",
+       ...
+     }
+     ```
+   - Replace `__OAUTH_CLIENT_ID__` with the value of `VITE_OAUTH_CLIENT_ID` from your `.env.local` file.
+
+4. Run the development server:
    ```
    npm run dev
    ```
